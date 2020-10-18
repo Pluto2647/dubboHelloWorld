@@ -6,6 +6,9 @@ import java.io.IOException;
 
 // MainApplication：加载 Spring 配置
 
+/**
+ * 生产者
+ */
 public class MainApplication {
     public static void main(String[] args) throws IOException {
         ClassPathXmlApplicationContext ioc = new ClassPathXmlApplicationContext("provider.xml");
