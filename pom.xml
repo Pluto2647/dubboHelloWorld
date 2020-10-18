@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.pluto.www</groupId>
+    <artifactId>dubbo-helloworld</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>userserviceprovider</module>
+        <module>orderserviceconsumer</module>
+        <module>gmallinterface</module>
+    </modules>
+    <properties>
+        <java.version>1.8</java.version>
+        <micro.version>0.0.1-SNAPSHOT</micro.version>
+        <dubbo.version>2.7.5</dubbo.version>
+        <nacos.version>0.2.4</nacos.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <swagger-bootstrap.version>1.9.6</swagger-bootstrap.version>
+        <zxing.version>3.3.0</zxing.version>
+    </properties>
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>https://maven.aliyun.com/repository/central</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <dependencies>
+
+    </dependencies>
+    <distributionManagement>
+        <repository>
+            <id>localRepository</id>
+            <!--这里填写你的仓库  如果maven在公网就是网络地址-->
+            <url>file:D:/DevInstall/apache-maven-3.3.9/repository</url>
+        </repository>
+    </distributionManagement>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.7.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+
+            <!-- 要将源码放上去，需要加入这个插件 -->
+            <plugin>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>3.0.1</version>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+                <executions>
+                    <execution>
+                        <phase>compile</phase>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+</project>

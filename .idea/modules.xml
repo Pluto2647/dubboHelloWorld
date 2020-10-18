@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dubbohelloworld.iml" filepath="$PROJECT_DIR$/dubbohelloworld.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gmallinterface/gmallinterface.iml" filepath="$PROJECT_DIR$/gmallinterface/gmallinterface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderserviceconsumer/orderserviceconsumer.iml" filepath="$PROJECT_DIR$/orderserviceconsumer/orderserviceconsumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userserviceprovider/userserviceprovider.iml" filepath="$PROJECT_DIR$/userserviceprovider/userserviceprovider.iml" />
+    </modules>
+  </component>
+</project>
